@@ -7,7 +7,7 @@ df = pd.read_json('meteorites.json')
 app = Dash(__name__)
 
 app.layout = html.Div([
-    html.H1("NASA meteorite strike dashboard", style={'text-align': 'center'}),
+    html.H1("NASA meteorite strike dashboard"),
     
     dcc.Graph(
         id='meteorite-map',
@@ -42,4 +42,4 @@ app.layout = html.Div([
 ])
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False, dev_tools_hot_reload=True)

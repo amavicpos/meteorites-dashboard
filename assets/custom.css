@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Nasalization'; 
+    src: url('nasalization-rg.otf');
+}
+
+h1 {
+    text-align: center;
+    font-family: "Nasalization";
+}
