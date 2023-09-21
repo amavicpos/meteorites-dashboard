@@ -15,8 +15,10 @@ app.layout = html.Div([
             df,
             lon='reclong',
             lat='reclat',
-            hover_name='name',
             projection="natural earth"
+        ).update_traces(
+            customdata=df['name'],
+            hovertemplate='<b>%{customdata}</b><br>Coordinates: (%{lon}, %{lat})'
         ),
     ),
     
